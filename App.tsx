@@ -9,9 +9,9 @@ import { MemberSettings } from './components/MemberSettings.tsx';
 import { LoginModal } from './components/LoginModal.tsx';
 import { getWorkloadAdvice, getAiKey } from './services/geminiService.ts';
 
-const TASKS_STORAGE_KEY = 'cg-flow-master-tasks-v2';
-const MEMBERS_STORAGE_KEY = 'cg-flow-master-members-v2';
-const ADMIN_PW_KEY = 'cg-flow-admin-password-v2';
+const TASKS_STORAGE_KEY = 'cg-flow-master-tasks-v3';
+const MEMBERS_STORAGE_KEY = 'cg-flow-master-members-v3';
+const ADMIN_PW_KEY = 'cg-flow-admin-password-v3';
 const DEFAULT_ADMIN_PASSWORD = '1234';
 
 const App: React.FC = () => {
@@ -224,7 +224,10 @@ const App: React.FC = () => {
         <div className="flex items-center gap-4">
           <div className="flex flex-col">
             <h1 className="text-xl font-black italic tracking-tighter text-white">CG FLOW</h1>
-            <span className="text-[8px] font-black bg-indigo-500 text-white px-1.5 py-0.5 rounded italic w-fit">FINAL VERSION</span>
+            <div className="flex items-center gap-1.5 mt-0.5">
+               <span className="text-[8px] font-black bg-emerald-500 text-black px-1.5 py-0.5 rounded italic">CONNECTED</span>
+               <span className="text-[8px] font-black text-slate-500 uppercase tracking-widest">BUILD 3.0.4</span>
+            </div>
           </div>
         </div>
 
