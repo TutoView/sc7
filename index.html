@@ -3,8 +3,8 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CG Flow Master | 최종 배포</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>CG Flow Master | Final Stable</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -14,9 +14,10 @@
             color: #f8fafc;
             margin: 0;
             overflow-x: hidden;
+            touch-action: pan-y;
         }
         ::-webkit-scrollbar {
-            width: 6px;
+            width: 4px;
         }
         ::-webkit-scrollbar-track {
             background: #0f172a;
@@ -24,9 +25,6 @@
         ::-webkit-scrollbar-thumb {
             background: #334155;
             border-radius: 10px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #475569;
         }
     </style>
 <script type="importmap">
@@ -44,6 +42,6 @@
 </head>
 <body>
     <div id="root"></div>
-    <script type="module" src="./index.tsx"></script>
+    <script type="module" src="./index.tsx?v=3.2.0"></script>
 </body>
 </html>
